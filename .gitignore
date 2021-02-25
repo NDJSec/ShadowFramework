@@ -1,0 +1,5 @@
+build/
+dist/
+.vscode 
+__pycache__
+ShadowFramework.egg-info
