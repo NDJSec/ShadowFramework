@@ -3,7 +3,8 @@ from setuptools import setup
 
 dependencies = [
     "Click",
-    "netmiko"
+    "netmiko",
+    "pytest"
 
 ]
 
