@@ -17,7 +17,7 @@ class crypto_handler():
         if (flag == 'decrypt'):
             if(opt == '1'):
                 vignere_cipher = click.prompt('Please enter the cipher to be decrypted', type=str)
-                key = click.prompt('Please enter the key length if known.', type=int)
+                key = click.prompt('Please enter the key length if known.', type=str)
                 print(vignere.decrypt(vignere_cipher, key))
                 pass
             if(opt == '2'):
