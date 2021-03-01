@@ -15,8 +15,7 @@ def decrypt(caesar_cipher, shift):
         else:
             emsg.append(c)
 
-    message = ''.join(emsg)
-    print(message)
+    return(''.join(emsg))
 
 def guess(caesar_cipher, flag_start):
     msg = list(caesar_cipher)
@@ -44,6 +43,6 @@ def guess(caesar_cipher, flag_start):
         message = decrypted_message
         emsg.clear()
 
-    print('FLAG:' + decrypted_message)
-    print('NOTE: FLAG HAS BEEN CHANGED TO ALL LOWERCASE')
+    return(decrypted_message)
+    
         

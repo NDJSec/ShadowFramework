@@ -47,12 +47,11 @@ def crypto(encrypt, decrypt):
         crypto_handler.crypto_handler.crypto(None, 'encrypt',opt)
     if(decrypt):
         opt = click.prompt('Please choose an decryption/decoding type \n' +
-        '1: MD5 \n' +
-        '2: URL Encode \n' +
-        '3: Caesar \n' +
+        '1: Vigenere \n' +
+        '2: Caesar \n' +
+        '3:  \n' +
         '4:  \n' +
-        '5:  \n' +
-        '6: Guess the type \n' +
+        '5: Guess the type \n' +
         '99: Exit', 
         default='99'
         )
