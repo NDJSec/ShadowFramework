@@ -38,6 +38,8 @@ pip setup.py install
 ```console
 cd docker
 sudo docker build .
+
+docker run --rm -it -v "${pwd}:/root/SH4D0W" shadowframework (FOR WINDOWS IN POWERSHELL)
 ```
 
 #### Usage
