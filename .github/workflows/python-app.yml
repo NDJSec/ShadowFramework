@@ -5,7 +5,7 @@ name: Shadow Framework CI Tests
 
 on:
   push:
-    branches: [ main, development ]
+    branches: [ main, Development ]
   pull_request:
     branches: [ main ]
 
