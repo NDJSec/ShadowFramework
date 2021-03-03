@@ -16,9 +16,9 @@ Components include Cisco Configuration and CTF Tools with more to come.
 ## Getting Started
 
 ### Install
-The Shadow Framework in built using python. For this reason it is recomended that you use the latest version of python.
-We also recomend that you install the Shadow Framework in a virtual enviroment for easy use and install.
-**Note: A Docker container is also provided if you would like to install in docker.**
+The Shadow Framework is built using python. For this reason, it is recommended that you use the latest version of python.
+We also recommend that you install the Shadow Framework in a virtual environment for easy use and installation.
+**Note: A Docker container is also provided if you would like to install it in docker.**
 #### Linux
 ```console
 sudo apt update
@@ -38,13 +38,15 @@ pip setup.py install
 ```console
 cd docker
 sudo docker build .
+
+docker run --rm -it -v "${pwd}:/root/SH4D0W" shadowframework (FOR WINDOWS IN POWERSHELL)
 ```
 
 #### Usage
 ```console
 shadow [OPTIONS] COMMAND [ARGS]
 ```
-Runing shadow will give you a list a runnable commands. 
+Running shadow will give you a list of runnable commands. 
 
 ## Contributing
 If you would like to contribute to the Shadow Framework please visit the [CONTRIBUTING](CONTRIBUTING.md) page.

@@ -1,7 +1,10 @@
 from shadow.crypto import MD5 
 from shadow.crypto import url_encode
 from shadow.crypto import caesar
-from shadow.crypto  import vignere
+from shadow.crypto import vignere
+from shadow.crypto import binary
+from shadow.crypto import hexadecimal 
+from shadow.crypto import octal
 import click
 
 class crypto_handler():
@@ -30,6 +33,13 @@ class crypto_handler():
                     print('FLAG:' + caesar.guess(caesar_cipher, flag_start))
                     print('NOTE: FLAG HAS BEEN CHANGED TO ALL LOWERCASE')
             if(opt == '3'):
-                pass
+                binary_input = click.prompt('Please enter the binary string to be decrypted', type=str)
+                print(binary.binary_decrypt(binary_input))
+            if(opt == '4'):
+                oct_input = click.prompt('Please enter the octal string to be decrypted', type=str)
+                print(octal.oct_decrypt(oct_input))
+            if(opt == '5'):
+                hex_input = click.prompt('Please enter the hex string to be decrypted', type=str)
+                print(hexadecimal.hex_decrypt(hex_input))
         
         

@@ -49,9 +49,10 @@ def crypto(encrypt, decrypt):
         opt = click.prompt('Please choose an decryption/decoding type \n' +
         '1: Vigenere \n' +
         '2: Caesar \n' +
-        '3:  \n' +
-        '4:  \n' +
-        '5: Guess the type \n' +
+        '3: Binary \n' +
+        '4: Octal \n' +
+        '5: Hexadecimal \n' +
+        '6: Guess the type \n' +
         '99: Exit', 
         default='99'
         )
